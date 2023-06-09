@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href="{{url_for('static', filename =  'css/bootstrap.min.css')}} ">
+    <title> Avenger Game Result</title>
+</head>
+<body>
+    <center>
+            
+        <h1 style="color: red;"><em>Avenger Result</em> </h1>
+        <h2 style="color: blue ;">You are {{ result }}!</h2>
+        <img src="{{ url_for('static', filename=result + '.gif') }}" alt="{{ result }} " width="1368" height="551">
+
+    </center>
+</body>
+</html>

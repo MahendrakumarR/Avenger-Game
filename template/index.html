@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="{{url_for('static', filename =  'css/main.css') }}">
+        <link rel = "stylesheet" href="{{url_for('static', filename =  'css/bootstrap.min.css')}} ">
+    <title>
+        Avenger Game
+    </title>
+</head>
+<style>
+body{
+    background-image: url("{{url_for('static', filename =  'image/avg.jpg') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>
+<body>
+    <form action="/result" method="POST" >
+        <div class ="container">
+            <h1 class = "title"> Which <span>Avenger</span> Are You.?  </h1><br>
+            <h3 class="Question"><span>Question 1:</span> Who is your favourite Avenger.?</h3><br>
+            <div class="input-container">
+                <input type="text" name="text" placeholder="type something about avengers"><br>
+             </div>
+            <br><input type="submit" value="Submit" class="submit-button">
+        
+        </div>
+    </form>
+</body>
+</html>

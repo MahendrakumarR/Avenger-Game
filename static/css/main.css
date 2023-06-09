@@ -1,0 +1,76 @@
+
+body{
+    background-image: url("{{url_for('static', filename =  'image/avg.jpg') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.container{
+    text-align: center;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(228, 231, 6);
+    display: inline-block;
+    
+}
+.title span{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: red;    
+}
+
+
+.Question {
+    font-family: 'Cinzel Decorative', sans-serif;
+    text-align: center;
+    color: rgb(43, 158, 8);
+    display: inline-block;
+    
+        
+}
+.Question span{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: rgb(89, 0, 255);
+        
+}
+
+.input-container{
+    width: 300px;
+    margin: 20px auto;
+}
+
+input[type = 'text']{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type = 'text']:focus{
+    border-color: rgb(216, 6, 153);
+    outline: navajowhite;
+    
+}
+.submit-button{
+    padding: 10px 20px;
+    background-color: #0984d6;
+    color: rgb(252, 250, 248);
+    
+    border-radius: 6px;
+    border-color: rgb(238, 9, 9);
+    cursor: pointer;
+}
+
